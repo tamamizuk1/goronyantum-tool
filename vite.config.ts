@@ -17,4 +17,20 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  base: '/goronyantum-tool/', // リポジトリ名を設定
+  build: {
+    chunkSizeWarningLimit: 500, // 警告を500KBに設定
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['vue', 'vuetify'], // ライブラリを分割
+        },
+      },
+    },
+    terserOptions: {
+      compress: {
+        drop_console: true, // コンソールログを削除
+      },
+    },
+  },
 });

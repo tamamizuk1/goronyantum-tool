@@ -31,3 +31,5 @@ coverage
 
 # add
 .vscode
+*.ttf
+*.eot
