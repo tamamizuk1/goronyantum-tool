@@ -32,6 +32,11 @@
           value="tableconverter"
           @click="$router.push('/tableconverter')"
         ></v-list-item>
+        <v-list-item
+          title="RecipeConverter"
+          value="recipeconverter"
+          @click="$router.push('/recipeconverter')"
+        ></v-list-item>
       </v-list>
     </v-navigation-drawer>
 

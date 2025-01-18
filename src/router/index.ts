@@ -24,6 +24,12 @@ const router = createRouter({
       component: () =>
         import('../views/TableConverterToolView.vue'),
     },
+    {
+      path: '/recipeconverter',
+      name: 'recipeconverter',
+      component: () =>
+        import('../views/RecipeConverterToolView.vue'),
+    },
   ],
 });
 
